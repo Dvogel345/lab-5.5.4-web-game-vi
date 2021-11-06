@@ -29,6 +29,22 @@ const npc = newNonPlayableCharacter(50, 300)
 //         console.log('Done walking')
 //     })
 
+// Implementation of Complex track for NPC
+// Walk North for 1400 ms
+npc.walkNorth(1400)
+    // Walk East for 1200 ms
+    .then(() => npc.walkEast(1200))
+    // Walk South for 300 ms
+    .then(() => npc.walkSouth(300))
+    // Walk East for 1500 ms
+    .then(() => npc.walkEast(1500))
+    // Walk South for 1500 ms
+    .then(() => npc.walkSouth(1500))
+    // Walk West for 2700 ms
+    .then(() => npc.walkWest(2700))
+    // Walk North for 400 ms
+    .then(() => npc.walkNorth(400))
+
 
 // Create the inventory
 const inventory = newInventory()
