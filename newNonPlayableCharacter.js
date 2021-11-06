@@ -22,26 +22,62 @@ function newNonPlayableCharacter(x, y) {
     }
 
     setInterval(moveCharacter, 1)
+// duration = time npc moves in a specified direction
+function walkEast(duration) {
+    direction = 'east'
+    element.src = `./assets/red-character/east.gif`
+        // Making a promise to resolve
+        return new Promise(function(resolve){  
+            // setting timeout to resolve the promise by; 
+            setTimeout(() => {
+                //stopping the npc 
+                resolve(stop()) 
+                //after said duration
+            }, duration) 
+        })       
+}
 
-    function walkEast() {
-        direction = 'east'
-        element.src = `./assets/red-character/east.gif`
-    }
+function walkNorth(duration) {
+    direction = 'north'
+    element.src = `./assets/red-character/north.gif`
+    // Making a promise to resolve
+    return new Promise(function(resolve){  
+        // setting timeout to resolve the promise by; 
+        setTimeout(() => {
+            //stopping the npc 
+            resolve(stop()) 
+            //after said duration
+        }, duration) 
+    })       
+}
 
-    function walkNorth() {
-        direction = 'north'
-        element.src = `./assets/red-character/north.gif`
-    }
+function walkWest(duration) {
+    direction = 'west'
+    element.src = `./assets/red-character/west.gif`
+    // Making a promise to resolve
+    return new Promise(function(resolve){  
+        // setting timeout to resolve the promise by; 
+        setTimeout(() => {
+            //stopping the npc 
+            resolve(stop()) 
+            //after said duration
+        }, duration) 
+    })       
+}
 
-    function walkWest() {
-        direction = 'west'
-        element.src = `./assets/red-character/west.gif`
-    }
-
-    function walkSouth() {
-        direction = 'south'
-        element.src = `./assets/red-character/south.gif`
-    }
+function walkSouth(duration) {
+    direction = 'south'
+    element.src = `./assets/red-character/south.gif`
+   // Making a promise to resolve
+   return new Promise(function(resolve){  
+    // setting timeout to resolve the promise by; 
+    setTimeout(() => {
+        //stopping the npc 
+        resolve(stop()) 
+        //after said duration
+    }, duration) 
+})       
+}
 
     function stop() {
         direction = null
