@@ -22,6 +22,7 @@ function newNonPlayableCharacter(x, y) {
     }
 
     setInterval(moveCharacter, 1)
+    
 // duration = time npc moves in a specified direction
 function walkEast(duration) {
     direction = 'east'

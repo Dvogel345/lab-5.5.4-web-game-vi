@@ -4,12 +4,30 @@ const pc = newPlayableCharacter(100, 110)
 // Create a non-playable character
 const npc = newNonPlayableCharacter(50, 300)
 
+// test to see if walkEast works appropriately
 // have the NPC start walking east immediately
-npc.walkEast(2000)
-    .then(function(stop){
-        console.log('Done walking')
-    })
+// npc.walkEast(2000)
+//     .then(function(stop){
+//         console.log('Done walking')
+//     })
 
+// test to see if walkNorth works appropriately
+// npc.walkNorth(800)
+//     .then(function(stop){
+//         console.log('Done walking')
+//     })
+
+// test to see if walkWest works appropriately
+// npc.walkWest(100)
+//     .then(function(stop){
+//         console.log('Done walking')
+//     })
+
+// test to see if walkSouth works appropriately
+// npc.walkSouth(800)
+//     .then(function(stop){
+//         console.log('Done walking')
+//     })
 
 
 // Create the inventory
